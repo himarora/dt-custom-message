@@ -6,7 +6,6 @@ To use your defined message in some other ROS node, you can do:
 ```python
 from custom_msgs.msg import CustomMessage
 msg = CustomMessage()
-msg.x = 1.0
-msg.y = 2.0
+msg.x, msg.y = 1.0, 2.0
 publish(msg)
 ```
